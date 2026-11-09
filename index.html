@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Wedding Invitation | Md. Firoj &amp; Farha Praveen</title>
+<meta name="theme-color" content="#2a0614">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Royal Wedding Invitation | Md. Firoj &amp; Farha Praveen">
+<meta property="og:description" content="Tap to open your personalized royal invitation.">
+<meta name="twitter:card" content="summary_large_image">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Cinzel:wght@500;700&family=Amiri&display=swap" rel="stylesheet">
+<style>
+:root{--d:#2a0614;--p2:#6b1a38;--g:#e2bf6a;--g2:#a8822c;--t:#fff1e0;--w:#7a1f3d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 50% 0,#5a1230,var(--d) 70%) fixed;color:var(--t);font:19px/1.5 'Cormorant Garamond',Georgia,serif;text-align:center;overflow-x:hidden;padding-top:env(safe-area-inset-top)}
+body.rtl{direction:rtl}h1,h2,h3,p{margin:0}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:1}
+.cz{font-family:Cinzel,Georgia,serif;letter-spacing:.16em;text-transform:uppercase}
+.sc{font-family:'Great Vibes','Brush Script MT',cursive;font-size:44px;line-height:1.15}
+.ar{font-family:Amiri,'Traditional Arabic',serif;color:var(--g);font-size:30px}
+.gold{color:var(--g)}.it{font-style:italic;opacity:.9}
+.card{position:relative;z-index:2;background:linear-gradient(160deg,rgba(107,26,56,.6),rgba(42,6,20,.85));border:1.5px solid var(--g2);border-radius:26px;padding:24px 18px;margin:20px auto;max-width:460px;box-shadow:0 10px 30px rgba(0,0,0,.45),inset 0 0 30px rgba(226,191,106,.07)}
+.chip{display:inline-block;border:1px solid var(--g2);border-radius:20px;padding:3px 14px;margin:4px;font-size:16px}
+.btn{display:block;width:100%;margin:8px 0;padding:13px;border-radius:30px;border:1.5px solid var(--g2);background:rgba(42,6,20,.6);color:var(--t);font:700 14px Cinzel,Georgia,serif;letter-spacing:.06em;text-decoration:none;cursor:pointer}
+.btn.gb{background:linear-gradient(90deg,#f6e3a1,#d4af37);color:#3a0f22;border:0}
+.btn.wa{background:#1fa855;color:#fff;border:0}.btn:disabled{opacity:.45}
+.ph{position:relative;display:grid;place-items:center;width:150px;height:190px;margin:12px auto;border:3px solid var(--g);border-radius:20px;overflow:hidden;background:#5a1230;font:700 36px Cinzel,serif;color:var(--g)}
+.ph.rd{width:130px;height:130px;border-radius:50%}.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#load{position:fixed;inset:0;z-index:60;background:var(--d);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .8s}
+#load .ph{animation:pl 2s ease-in-out infinite}@keyframes pl{50%{box-shadow:0 0 40px rgba(226,191,106,.6)}}
+.bar{width:70%;max-width:300px;height:4px;background:#5a1230;border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--g)}
+#gate{position:fixed;inset:0;z-index:40;display:flex;align-items:flex-start;justify-content:center;padding:14px;overflow:auto}
+.door{position:fixed;top:0;bottom:0;width:50%;background:linear-gradient(180deg,var(--w),#3a0a1c);border:2px solid var(--g2);transition:transform 1.3s cubic-bezier(.7,0,.2,1)}
+.dl{left:0;transform-origin:left}.dr{right:0;transform-origin:right}
+#gate.go .dl{transform:perspective(900px) rotateY(-95deg)}#gate.go .dr{transform:perspective(900px) rotateY(95deg)}
+.gc{transition:opacity .6s,transform .8s;width:100%}#gate.go .gc{opacity:0;transform:scale(.9)}
+.lang{display:inline-flex;border:1.5px solid var(--g2);border-radius:30px;padding:4px;background:rgba(42,6,20,.7)}
+.lang b{padding:6px 14px;border-radius:24px;font:700 14px Cinzel,serif;cursor:pointer}.lang b.on{background:linear-gradient(90deg,#f6e3a1,#d4af37);color:#3a0f22}
+.nb{margin:12px 0;padding:12px;border:1.5px solid var(--g2);border-radius:20px;background:rgba(25,3,12,.7)}
+.nb input,.sh input{width:100%;padding:12px 16px;font:18px sans-serif;color:var(--t);background:#3a0f22;border:1px solid var(--g2);border-radius:26px;margin:8px 0;outline:0}
+.top{position:sticky;top:0;z-index:20;padding:8px;background:rgba(42,6,20,.85);backdrop-filter:blur(8px)}
+#app{display:none;padding-bottom:90px;position:relative;z-index:2}
+.ev.sac{border:2px solid var(--g);background:linear-gradient(160deg,rgba(226,191,106,.28),rgba(107,26,56,.7))}
+.ev h3{font-size:26px;margin:6px 0}.ev p{font-size:17px;opacity:.9}
+.cd{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.cd div{border:1px solid var(--g2);border-radius:16px;padding:10px;background:rgba(42,6,20,.6)}.cd b{display:block;font:700 34px Cinzel,serif;color:var(--g)}
+.nm{color:var(--g)}
+.nav{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:30;display:flex;justify-content:space-around;max-width:460px;margin:auto;padding:8px;border:1.5px solid var(--g2);border-radius:30px;background:rgba(42,6,20,.92);backdrop-filter:blur(8px)}
+.nav a{color:var(--t);text-decoration:none;font:700 11px Cinzel,serif;letter-spacing:.08em}.nav span{display:block;font-size:22px}
+#mus{position:fixed;right:12px;bottom:92px;z-index:31;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--g);background:#3a0f22;color:var(--g);font-size:20px;display:none}
+#qr{display:inline-block;background:#fff;padding:10px;border-radius:12px;margin:8px}
+@media print{#fx,.nav,#mus,.top,.sh,#gate,#load{display:none!important}body{background:#fff;color:#000}.card{background:#fff;border-color:#999;box-shadow:none}.gold,.ar,.nm,.cd b{color:#555}#app{display:block!important}}
+</style></head>
+<body>
+<canvas id="fx"></canvas>
+<audio id="au" loop src="music.mp3"></audio>
+
+<div id="load"><div class="ph rd" data-s="couple.svg"></div><div class="ar">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div><div class="bar"><i id="pb"></i></div><div class="cz gold" style="font-size:13px"><span id="pc">0</span>% • Entering Nikah Night</div></div>
+
+<div id="gate"><div class="door dl"></div><div class="door dr"></div>
+<div class="card gc" style="margin-top:12px">
+<div class="cz gold" style="font-size:13px">✦ <span data-t="royal"></span> ✦</div>
+<div class="lang" style="margin:12px 0"></div>
+<div class="ar">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div><p class="it" data-t="together"></p>
+<div class="ph" data-s="couple.svg"></div>
+<div class="sc nm" id="gB"></div><div class="it">weds</div><div class="sc nm" id="gG"></div>
+<p data-t="invite"></p>
+<div class="nb"><div class="cz gold" style="font-size:12px">✦ <span data-t="enter"></span> *</div>
+<input id="nm" placeholder="Your name" autocomplete="name"><div style="font-size:15px;opacity:.8"><span data-t="to"></span> <b id="gr"></b></div></div>
+<p class="cz gold" style="font-size:12px" id="gv"></p>
+<button class="btn gb" id="ob" disabled></button>
+</div></div>
+
+<div id="app"></div>
+<button id="mus">♫</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* ======= EDIT ONLY THIS PART (names, dates, numbers) ======= */
+var C={bride:"Farha Praveen",groom:"Md. Firoj",mono:"FF",
+ parents:"Mrs. & Mr. Md. Mustaque",
+ brideP:"D/o. Md. Mahtab",brideA:"Konhara Khurd, Near Mazar Sharif, Barkatha, Hazaribagh (Jharkhand)",
+ groomP:"S/o. Md. Mustaque",groomA:"Lac Factory Road, Near Abubaker Masjid, Hindpiri, Ranchi, Jharkhand",
+ date:"12.12.2026",tag:"Nikah 12.12.2026 \u2022 Walima 14.12.2026",venue:"Baba Banquet Hall",city:"Doranda",nikah:"2026-12-12T22:00:00+05:30",
+ host:"Md. Mustaque",hostA:"Lac Factory Road, Near Abubaker Masjid, Hindpiri, Ranchi, Jharkhand",
+ phones:["9386621828","7979744278"],wa:"919386621828",
+ elders:["Late Md. Ramzan"],
+ guests:["Afzal Khan","Noor Alam","Md. Afroz","Md. Sarfaraj"],
+ /* [date, time, title, text, 1=main event, ics date, 1=show map button] */
+ ev:[["11.12.2026 (Friday)","04:00 PM","Rasm-E-Haldi","The Haldi ceremony with family and friends.",0,"2026-12-11T16:00",0],
+ ["12.12.2026 (Saturday)","04:00 PM","Departure of Barat","The Barat sets out with prayers and joy.",0,"2026-12-12T16:00",0],
+ ["12.12.2026 (Saturday)","10:00 PM","Nikah-E-Masnoon","INSHA ALLAH the Nikah will be solemnised.",1,"2026-12-12T22:00",0],
+ ["13.12.2026 (Sunday)","07:00 AM","Return of Barat","The Barat returns home with the bride.",0,"2026-12-13T07:00",0],
+ ["14.12.2026 (Monday)","07:00 PM onwards","Taam-E-Walima (Reception)","Reception dinner at Baba Banquet Hall, Doranda.",1,"2026-12-14T19:00",1]]};
+/* ======= END EDIT ======= */
+var T={en:{royal:"Royal Wedding Invitation",together:"Together with the blessings of Allah",invite:"Invite you to celebrate their wedding",enter:"Please enter your name to open invitation",to:"To, Mrs./Mr.",open:"Open invitation for",dear:"Dear",lin:"Bride & Groom Lineage",prog:"Programme",cdt:"Countdown to the Nikah",ven:"Venue",map:"Open in Maps",bl:"In Revere Remembrance of Our Beloved Late Elders",hosts:"A Cordial Invitation From",call:"Tap to call or WhatsApp",gst:"With The Warm Compliments & Respects Of Our Family",shr:"Share The Joy",copy:"Copy link",pdf:"Download my invitation card (PDF)",wap:"Share on WhatsApp",oth:"Share with others",ics:"Download .ics calendar",qr:"Show QR code",kh:"Khuda Hafiz",comp:"With best compliments from",dir:"Get directions",pers:"Personalize for a relative / friend (optional)"},
+hi:{royal:"शाही शादी का निमंत्रण",together:"अल्लाह की रहमतों के साथ",invite:"आपको उनकी शादी में आने का न्योता देते हैं",enter:"निमंत्रण खोलने के लिए अपना नाम लिखें",to:"आदरणीय",open:"निमंत्रण खोलें:",dear:"प्रिय",lin:"दुल्हन और दूल्हा",prog:"कार्यक्रम",cdt:"निकाह तक उलटी गिनती",ven:"स्थान",map:"मैप में खोलें",bl:"हमारे स्वर्गीय बुज़ुर्गों की याद में",hosts:"निमंत्रक",call:"कॉल या WhatsApp करें",gst:"हमारे परिवार की ओर से सलाम और सम्मान",shr:"ख़ुशी बाँटें",copy:"लिंक कॉपी करें",pdf:"मेरा निमंत्रण कार्ड (PDF)",wap:"WhatsApp पर भेजें",oth:"दूसरों को भेजें",ics:"कैलेंडर (.ics) डाउनलोड",qr:"QR कोड दिखाएं",kh:"ख़ुदा हाफ़िज़",comp:"शुभकामनाओं सहित",dir:"रास्ता देखें",pers:"रिश्तेदार / दोस्त के लिए नाम (वैकल्पिक)"},
+ur:{royal:"شاہی شادی کا دعوت نامہ",together:"اللہ کی رحمتوں کے ساتھ",invite:"آپ کو ان کی شادی میں شرکت کی دعوت دیتے ہیں",enter:"دعوت نامہ کھولنے کے لیے اپنا نام لکھیں",to:"محترم",open:"دعوت نامہ کھولیں:",dear:"محترم",lin:"دلہن اور دولہا",prog:"پروگرام",cdt:"نکاح تک الٹی گنتی",ven:"مقام",map:"نقشے میں کھولیں",bl:"ہمارے مرحوم بزرگوں کی یاد میں",hosts:"دعوت کنندہ",call:"کال یا واٹس ایپ کریں",gst:"ہمارے خاندان کی جانب سے سلام و احترام",shr:"خوشی بانٹیں",copy:"لنک کاپی کریں",pdf:"میرا دعوت نامہ (PDF)",wap:"واٹس ایپ پر بھیجیں",oth:"دوسروں کو بھیجیں",ics:"کیلنڈر (.ics) ڈاؤن لوڈ",qr:"QR کوڈ دیکھیں",kh:"خدا حافظ",comp:"نیک تمناؤں کے ساتھ",dir:"راستہ دیکھیں",pers:"رشتہ دار / دوست کے لیے نام (اختیاری)"}};
+var L='en',N='',$=function(i){return document.getElementById(i)},
+MAP='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(C.venue+' '+C.city);
+function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function ph(){document.querySelectorAll('.ph[data-s]').forEach(function(e){if(e.dataset.d)return;e.dataset.d=1;e.innerHTML='<span>'+C.mono+'</span>';var i=new Image();i.onload=function(){e.appendChild(i)};i.onerror=function(){var j=new Image();j.onload=function(){e.appendChild(j)};j.src=e.dataset.s};i.src=e.dataset.s.replace('.svg','.jpg')})}
+function tr(){var t=T[L];document.querySelectorAll('[data-t]').forEach(function(e){e.textContent=t[e.dataset.t]||T.en[e.dataset.t]});
+document.body.classList.toggle('rtl',L=='ur');document.documentElement.lang=L;
+document.querySelectorAll('.lang b').forEach(function(b){b.classList.toggle('on',b.dataset.l==L)});upd()}
+function upd(){N=$('nm')?($('nm').value||'').trim():N;$('gr').textContent=N;$('ob').disabled=!N;$('ob').textContent=T[L].open+' '+N}
+var LG='<b data-l="en">ENGLISH</b><b data-l="hi">हिन्दी</b><b data-l="ur">اردو</b>';
+document.querySelectorAll('.lang').forEach(function(e){e.innerHTML=LG});
+function bindLang(){document.querySelectorAll('.lang b').forEach(function(b){b.onclick=function(){L=b.dataset.l;tr()}})}
+$('gB').textContent=C.groom;$('gG').textContent=C.bride;$('gv').textContent=C.tag;
+var q=new URLSearchParams(location.search).get('to');if(q)$('nm').value=q;
+$('nm').oninput=upd;bindLang();ph();tr();
+function qr(el,txt){try{el.innerHTML='';new QRCode(el,{text:txt,width:140,height:140,colorDark:'#3a0f22',colorLight:'#fff'})}catch(e){el.textContent=txt}}
+function link(n){return location.origin+location.pathname+(n?'?to='+encodeURIComponent(n):'')}
+function build(){
+var ev=C.ev.map(function(e){return '<div class="card ev'+(e[4]?' sac':'')+'"><div class="cz gold" style="font-size:12px">'+e[0]+'</div><span class="chip">'+e[1]+'</span><h3>'+e[2]+'</h3><p>'+e[3]+'</p>'+(e[6]?'<a class="btn" target="_blank" rel="noopener" href="'+MAP+'">📍 <span data-t="dir"></span></a>':'')+'</div>'}).join('');
+var ph3=function(s,n,p,a){return '<div class="card"><div class="ph rd" data-s="'+s+'"></div><div class="sc nm">'+n+'</div><p class="gold">'+p+'</p><p style="font-size:16px;opacity:.85">'+a+'</p></div>'};
+var ph_=C.phones.map(function(p){return '<a class="btn" href="tel:+91'+p+'">📞 '+p+'</a>'}).join('');
+$('app').innerHTML=
+'<div class="top"><div class="lang"></div></div>'+
+'<section class="card" id="top"><div class="ar">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div><p class="it" data-t="together"></p><div class="ph" data-s="couple.svg"></div><div class="sc nm">'+C.groom+'</div><div class="it">weds</div><div class="sc nm">'+C.bride+'</div><p class="cz gold" style="font-size:13px;margin-top:8px">'+C.tag+'</p><p style="margin-top:10px"><span data-t="dear"></span> <b class="gold">'+esc(N)+'</b></p></section>'+
+'<section class="card"><p class="it">'+C.parents+'</p><p class="it" style="font-size:16px">request your gracious presence to celebrate the marriage of their beloved son</p><h2 class="cz gold" style="font-size:20px;margin-top:8px" data-t="lin"></h2></section>'+
+ph3('groom.svg',C.groom,C.groomP,C.groomA)+ph3('bride.svg',C.bride,C.brideP,C.brideA)+
+'<section id="prog"><div class="card"><div class="it">INSHA ALLAH</div><h2 class="cz gold" style="font-size:24px" data-t="prog"></h2></div>'+ev+'</section>'+
+'<section class="card"><h2 class="cz gold" style="font-size:16px" data-t="cdt"></h2><p>12 December 2026 • 10:00 PM</p><div class="cd" id="cd"></div></section>'+
+'<section class="card" id="ven"><h2 class="cz gold" style="font-size:16px" data-t="ven"></h2><h3 style="font-size:30px;margin:6px 0">'+C.venue+', '+C.city+'</h3><p class="it">Taam-E-Walima &bull; 14.12.2026, 7:00 PM</p><div id="qv" class="qrb"></div><a class="btn gb" target="_blank" rel="noopener" href="'+MAP+'">📍 <span data-t="map"></span></a></section>'+
+'<section class="card"><h2 class="cz gold" style="font-size:15px" data-t="bl"></h2>'+C.elders.map(function(e){return '<div class="nb"><div class="cz" style="font-size:18px">'+e+'</div><div class="ar" style="font-size:20px">اللہ انہیں جنت الفردوس میں اعلیٰ مقام عطا فرمائے</div></div>'}).join('')+'</section>'+
+'<section class="card" id="host"><h2 class="cz gold" style="font-size:14px" data-t="hosts"></h2><h3 style="font-size:32px;margin:6px 0">'+C.host+'</h3><p style="font-size:16px;opacity:.85">'+C.hostA+'</p><p class="cz gold" style="font-size:12px;margin-top:10px" data-t="call"></p>'+ph_+'<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/'+C.wa+'">💬 WhatsApp ('+C.phones[0]+')</a></section>'+
+'<section class="card"><h2 class="cz gold" style="font-size:14px" data-t="gst"></h2>'+C.guests.map(function(g){return '<span class="chip">'+g+'</span>'}).join('')+'<p class="sc" style="font-size:34px;margin-top:8px">All Relatives & Friends</p></section>'+
+'<section class="card sh"><h2 class="cz gold" style="font-size:18px" data-t="shr"></h2><p class="cz gold" style="font-size:11px;margin-top:10px" data-t="pers"></p><input id="sn" placeholder="Name" value="'+esc(N)+'"><button class="btn" id="cp">🔗 <span data-t="copy"></span></button><p id="lk" style="font-size:13px;opacity:.7;word-break:break-all"></p><button class="btn gb" id="pf">⬇ <span data-t="pdf"></span></button><button class="btn wa" id="wp">💬 <span data-t="wap"></span></button><button class="btn" id="sx">↗ <span data-t="oth"></span></button><button class="btn" id="ic">📅 <span data-t="ics"></span></button><button class="btn" id="qb">▦ <span data-t="qr"></span></button><div id="qx"></div></section>'+
+'<section class="card"><div class="ph rd" data-s="couple.svg"></div><div class="sc" style="font-size:34px" data-t="kh"></div><div class="ph" style="width:70px;height:70px;border-radius:50%;font-size:22px;margin:10px auto;display:grid"><span>'+C.mono+'</span></div><p class="cz gold" style="font-size:12px"><span data-t="comp"></span> '+C.host+'</p><div class="ar" style="margin-top:10px">جَزَاكَ اللّٰهُ خَيْرًا</div><p class="it">“Jazakallah Khair for your gracious presence & prayers”</p><div class="sc nm" style="font-size:36px;margin-top:8px">'+C.groom+' & '+C.bride+'</div><p class="cz" style="font-size:12px">'+C.tag+'</p></section>'+
+'<nav class="nav"><a href="tel:+91'+C.phones[0]+'"><span>📞</span>CALL</a><a href="https://wa.me/'+C.wa+'" target="_blank" rel="noopener"><span>💬</span>CHAT</a><a href="'+MAP+'" target="_blank" rel="noopener"><span>📍</span>MAP</a><a href="#prog"><span>📅</span>EVENTS</a></nav>';
+document.querySelectorAll('#app .lang').forEach(function(e){e.innerHTML=LG});bindLang();ph();tr();
+qr($('qv'),MAP);$('qv').id='qv';$('qv').style.cssText='display:inline-block;background:#fff;padding:10px;border-radius:12px;margin:8px';
+var msg=function(){return 'You are warmly invited to the wedding of '+C.groom+' & '+C.bride+' (Nikah '+C.date+'). Open your personal invitation: '};
+var lk=function(){var n=$('sn').value.trim();$('lk').textContent=link(n);return link(n)};lk();$('sn').oninput=lk;
+$('cp').onclick=function(){try{navigator.clipboard.writeText(lk())}catch(e){}};
+$('pf').onclick=function(){window.print()};
+$('wp').onclick=function(){window.open('https://wa.me/?text='+encodeURIComponent(msg()+lk()))};
+$('sx').onclick=function(){if(navigator.share)navigator.share({title:'Wedding Invitation',text:msg(),url:lk()});else $('cp').click()};
+$('qb').onclick=function(){var d=$('qx');d.innerHTML='<div id="qr"></div>';qr($('qr'),lk())};
+$('ic').onclick=function(){var s='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Invitation//EN\r\n'+C.ev.map(function(e,i){return 'BEGIN:VEVENT\r\nUID:ev'+i+'@invite\r\nDTSTAMP:20260101T000000Z\r\nDTSTART:'+e[5].replace(/[-:]/g,'')+'00\r\nDURATION:PT2H\r\nSUMMARY:'+e[2]+' - '+C.groom+' & '+C.bride+(e[6]?'\r\nLOCATION:'+C.venue+' '+C.city:'')+'\r\nEND:VEVENT\r\n'}).join('')+'END:VCALENDAR';
+var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/calendar'}));a.download='wedding.ics';a.click()};
+var t=new Date(C.nikah);function tick(){var s=Math.max(0,Math.floor((t-new Date())/1000)),v=[[Math.floor(s/86400),'Days'],[Math.floor(s%86400/3600),'Hours'],[Math.floor(s%3600/60),'Minutes'],[s%60,'Seconds']];
+$('cd').innerHTML=v.map(function(x){return '<div><b>'+x[0]+'</b>'+x[1]+'</div>'}).join('')}tick();setInterval(tick,1000)}
+$('ob').onclick=function(){upd();if(!N)return;var a=$('au');a.play().then(function(){$('mus').style.display='block'}).catch(function(){});
+$('gate').classList.add('go');build();
+setTimeout(function(){$('gate').style.display='none';$('app').style.display='block';scrollTo(0,0)},1500)};
+$('mus').onclick=function(){var a=$('au');a.paused?a.play():a.pause()};
+var n=0,iv=setInterval(function(){n=Math.min(100,n+2);$('pb').style.width=n+'%';$('pc').textContent=n;if(n==100){clearInterval(iv);setTimeout(function(){$('load').style.opacity=0;setTimeout(function(){$('load').style.display='none'},800)},400)}},45);
+var cv=$('fx'),x=cv.getContext('2d'),P=[],i;function rs(){cv.width=innerWidth;cv.height=innerHeight}rs();onresize=rs;
+for(i=0;i<36;i++)P.push({x:Math.random()*cv.width,y:Math.random()*cv.height,r:1+Math.random()*3,s:.3+Math.random()*.8});
+(function f(){x.clearRect(0,0,cv.width,cv.height);P.forEach(function(p){p.y+=p.s;p.x+=Math.sin(p.y/40)*.4;if(p.y>cv.height){p.y=-5;p.x=Math.random()*cv.width}x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fillStyle='rgba(226,191,106,.55)';x.fill()});requestAnimationFrame(f)})();
+</script>
+</body></html>
